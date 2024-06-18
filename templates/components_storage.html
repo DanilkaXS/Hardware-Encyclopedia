@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Жорсткі диски та SSD</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="{{ url_for('static', filename='img/logo.png') }}" width="30" height="30"
+             class="d-inline-block align-top" alt="">
+        Hardware Encyclopedia
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Головна</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Комп'ютерні комплектуючі
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/components/cpu">Процесори</a>
+                    <a class="dropdown-item" href="/components/gpu">Відеокарти</a>
+                    <a class="dropdown-item" href="/components/ram">Оперативна пам'ять</a>
+                    <a class="dropdown-item" href="/components/storage">Жорсткі диски та SSD</a>
+                    <a class="dropdown-item" href="/components/motherboard">Материнські плати</a>
+                    <a class="dropdown-item" href="/components/power">Живлення</a>
+                    <a class="dropdown-item" href="/components/case">Корпуси</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownVideo" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Відео
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownVideo">
+                    <a class="dropdown-item" href="/videos/reviews">Огляди комплектуючих</a>
+                    <a class="dropdown-item" href="/videos/tutorials">Відеоуроки з встановлення та налаштування</a>
+                    <a class="dropdown-item" href="/videos/new-releases">Новинки на ринку</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/links">Корисні посилання</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/contact">Контакти розробника</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <h1>Жорсткі диски та SSD</h1>
+    <p>Жорсткий диск (HDD) та твердотільний накопичувач (SSD) - це два типи накопичувачів, які використовуються для
+        зберігання даних на комп'ютері.</p>
+    <p>Жорсткий диск складається з рухомої дискової системи, яка зчитує та записує дані на магнітний диск. Він є більшим
+        за розміром та зазвичай має більшу потужність зберігання даних, але менше швидкість читання-запису порівняно з
+        SSD.</p>
+    <p>SSD використовує флеш-пам'ять для зберігання даних і не має рухомих частин, що робить його швидшим та менш
+        схильним до виходу з ладу внаслідок ударів чи падінь. Він зазвичай має менші розміри та більшу швидкість
+        читання-запису порівняно з HDD.</p>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='img/hdd.jpg') }}" class="img-fluid" alt="Жорсткий диск (HDD)">
+        </div>
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='img/ssd.jpg') }}" class="img-fluid"
+                 alt="Твердотільний накопичувач (SSD)">
+        </div>
+    </div>
+    <div class="news-product__description-holder">
+        <div class="news-product__description">
+            <p dir="ltr">У ПК ставлять два види інформаційних носіїв: жорсткий і/або твердотільний диск. Обидва пристрої
+                – відмінні варіанти сховищ, а тому вибирати між ними непросто. Порівняння їх особливостей, позитивних
+                сторін, а також недоліків допоможе зрозуміти, який же диск все-таки краще.</p>
+
+            <p dir="ltr"><img alt="SSD vs HDD" src="https://img.moyo.ua/img/news_desc/1661/166149_1716894254_0.png"
+                              style="height:560px; width:700px"></p>
+
+            <h2 dir="ltr" id="ank2-1_hash">HDD – класичний вінчестер</h2>
+
+            <p dir="ltr">Такий носій складається з декількох пластин з магнітним напиленням, зроблених з металу.
+                Спеціальна головка, яка рухається над поверхнею диска (а він крутиться на великій швидкості), читає і
+                пише інформацію.</p>
+
+            <p dir="ltr">Відмінності <a href="https://www.moyo.ua/comp-and-periphery/periphery-and-compon/int-storage/">моделей</a>НЕ
+                тільки в обсязі, але також і в швидкості, з якою пристрої працюють. Цей Параметр залежить від того,
+                наскільки швидко обертається диск. Показник Вказується в оборотах на хвилину, наприклад, 5200 ОБ/хв, як
+                Уполтерабайтного WD 2.5" SATA 3.0, або 7200 об/хв, ушестітерабайтного DELL 3.5" SATA.</p>
+
+            <p dir="ltr">Форм-фактор HDD пристроїв також відрізняються. Найбільш поширені два варіанти – 2,5 і 3,5
+                дюйма. Перший формат універсальний: його ставлять як в ноутбуки, так і в десктопи. Другий же підходить
+                тільки для десктопних збірок.</p>
+
+            <p dir="ltr"><img alt="внутренние жесткие диски WD5000LPCX и 400-AGMN"
+                              src="https://img.moyo.ua/img/news_desc/1661/166149_1716894255_1.png"
+                              style="height:385px; width:700px"></p>
+
+            <p dir="ltr">Ремарка: HDD можуть призначатися не тільки для внутрішньої установки, але і бути <a
+                    href="https://www.moyo.ua/comp-and-periphery/inform_carrier/ext-storage/">портативними</a>.</p>
+
+            <h2 dir="ltr" id="ank2-2_hash">SSD – накопичувач нового покоління</h2>
+
+            <p dir="ltr"><a href="https://www.moyo.ua/comp-and-periphery/inform_carrier/ssd/">SSD-пам'ять </a>з'явилася
+                пізніше жорстких дисків і сильно відрізняється від попередника. Твердотільні пристрої – немеханічних.
+                «Нутрощі» таких накопичувачів виглядають, як набір мікросхем. Область застосування ССД досить широка. Їх
+                встановлюють як на системну плату, що актуально для тоненьких лептопів, так і на карту PCI Express або в
+                спеціальний слот для настільних ПК.</p>
+
+            <p dir="ltr" style="text-align:right"><strong>Примітка</strong>: <em>як і HDD, SSD бувають зовнішні і <a
+                    href="https://www.moyo.ua/comp-and-periphery/inform_carrier/ssd/vnutrenniyi/">внутрішні</a>.
+                Внутрішні – для установки безпосередньо в систему, а <a
+                        href="https://www.moyo.ua/comp-and-periphery/inform_carrier/ssd/vneshniyi/">портативні</a> для
+                швидкого і простого підключення до девайсу по USB.</em></p>
+
+            <p dir="ltr">Все твердотельнікі працюють на NAND-пам'яті. Однак при виборі слід звертати увагу на її тип.
+                Основних видів три.</p>
+
+            <p dir="ltr"><img alt="внутренние ссд диски SA400S37/120G и CT240BX500SSD1"
+                              src="https://img.moyo.ua/img/news_desc/1661/166149_1716894255_2.png"
+                              style="height:283px; width:700px"></p>
+
+            <div dir="ltr">
+                <div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <p dir="ltr"><a href="https://www.moyo.ua/comp-and-periphery/inform_carrier/ssd/mlc/">MLC</a>
+                                </p>
+                            </td>
+                            <td>
+                                <p dir="ltr">накопичувачі служать не менше трьох років при правильному використанні.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p dir="ltr">SLC</p>
+                            </td>
+                            <td>
+                                <p dir="ltr">дороге задоволення, проте термін служби пам'яті приблизно в 10 разів
+                                    перевищує MLC.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p dir="ltr"><a href="https://www.moyo.ua/comp-and-periphery/inform_carrier/ssd/tlc/">TLC</a>
+                                </p>
+                            </td>
+                            <td>
+                                <p dir="ltr">золота середина по співвідношенню вартості і довговічності.</p>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <p dir="ltr">Головна відмінність всіх типів – кількість бітів, які зберігаються в комірці пам'яті. Вони
+                впливають на термін служби носія і ціну.</p>
+
+            <p dir="ltr" style="text-align:right"><strong>Примітка</strong>: <em>на зносостійкість також впливає
+                контролер. Ця комплектує відповідає за рівний розподіл інформації по осередках і навантаження на
+                пристрій відповідно.</em></p>
+
+            <p dir="ltr">При виборі ССД також враховують показник IOPS – число процедур введення і виведення в секунду.
+                Він відображає здатність девайса працювати з великим об'ємом файлів.</p>
+
+            <p dir="ltr"><img alt="внешние твердотельные накопители Transcend JetDrive 855 и KINGSTON HyperX Savage EXO"
+                              src="https://img.moyo.ua/img/news_desc/1661/166149_1716894256_3.png"
+                              style="height:748px; width:700px"></p>
+
+            <p dir="ltr" style="text-align:right"><strong>Цікаво</strong>: <em>незважаючи на те, що ССД іноді називають
+                великими флешками, чіпи, які використовують в подібних накопичувачах, відрізняються від тих, що
+                застосовуються у флешках. Вони надійніше і швидше.</em></p>
+
+            <h2 dir="ltr" id="ank2-3_hash">Переваги та недоліки HDD</h2>
+
+            <p dir="ltr">Hard drive з'явилися набагато раніше solid drive, але до сих пір не здають позиції. У них
+                чимало переваг. Ось лише основні з них:</p>
+
+            <ol>
+                <li dir="ltr">
+                    <p dir="ltr">Співвідношення ціни та місткості: HDD значно дешевше SSD аналогічного об'єму.</p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">Відновити загублені дані на жорсткому диску простіше, ніж на ССД.</p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">В силу технічних особливостей HDD служать довше практично в два рази при більш
+                        серйозних навантаженнях.</p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">Термін служби не залежить від того, скільки разів диск зчитував і перезаписував
+                        файли.</p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">При раптовому відключенні живлення ймовірність втрати даних дуже мала в порівнянні з
+                        твердотільними накопичувачами.</p>
+                </li>
+            </ol>
+
+            <p dir="ltr"><img alt="12-терабайтный WD121KRYZ"
+                              src="https://img.moyo.ua/img/news_desc/1661/166149_1716894256_4.png"
+                              style="height:511px; width:700px"></p>
+
+            <p dir="ltr" style="text-align:right"><strong>Рада</strong>: <em>якщо хочеться дуже місткий HDD, то <a
+                    href="https://www.moyo.ua/zhestkiyi_disk_vnutrenniyi_wd_3_5_12tb_256mb_7200rpm_gold_wd121kryz/399696.html">WD121KRYZ</a>
+                підійде, адже в ньому – 12 терабайт.</em></p>
+
+            <p dir="ltr">НА жаль, мінуси теж є:</p>
+
+            <ul>
+                <li dir="ltr">
+                    <p dir="ltr">Показник енергоспоживання в порівнянні з твердотільними накопичувачами у HDD вище. Це
+                        означає, що при роботі <a href="https://www.moyo.ua/comp-and-periphery/notebooks/">з
+                            ноутбуком</a> акумулятора автономність останнього буде нижче. HDD також сильніше
+                        нагріваються.</p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">Наявність механічних деталей призводить до стороннього шуму.</p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">Жорсткі диски повільніше, ніж ССД. Це помітно як при читанні і запису інформації, так і
+                        при запуску вимогливого до ресурсів системи софта і самої операційної системи.</p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">Чутливість HDD до зовнішніх впливів вкрай висока. Вібрації, падіння або удар можуть
+                        привести до збоїв в роботі. Не варто забувати і про сприйнятливості жорстких дисків до
+                        магнітного поля, яке також може нашкодити накопичувача.</p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">Розміри і вага: в питаннях ваги і компактності жорсткий диск програє SSD. Це має
+                        значення при встановленні в лептоп, а також для портативних носіїв.</p>
+                </li>
+            </ul>
+
+            <p dir="ltr" style="text-align:right"><strong>Цікаво</strong>: <em>зовнішні HDD часто одягаються в
+                прогумовані корпусу, які захищають диск від вібрацій і механічних пошкоджень. Терабайтниє <a
+                        href="https://www.moyo.ua/zhestkiyi_disk_transcend_storejet_2_5_usb_3_0_1tb_iron_gray_slim/416053.html">StoreJet</a>
+                <a href="https://www.moyo.ua/zhestkiy-disk-apacer-2-5-usb-3-1-ac630-1tb-black-orange-ap1tbac630t-1/425561.html">AC630</a>
+                як раз такі.</em></p>
+
+            <p dir="ltr"><img alt="защищенные внешние HDD StoreJet и AC630"
+                              src="https://img.moyo.ua/img/news_desc/1661/166149_1716894257_5.png"
+                              style="height:412px; width:700px"></p>
+
+            <h2 dir="ltr" id="ank2-4_hash">Переваги і недоліки SSD</h2>
+
+            <p dir="ltr">Як і у жорстких дисків, у твердотільних сховищ теж є плюси і мінуси. ДО позитивних рис слід
+                віднести:</p>
+
+            <ol>
+                <li dir="ltr">
+                    <p dir="ltr">Відсутність механіки – додає ССД витривалості. Навмисно проводити краш-тест не
+                        рекомендується, однак в більшості випадків падіння зі столу і інші подібні «катаклізми» не
+                        вплинуть на роботу SSD. Тоді як при найменшій струсу HDD найчастіше починає працювати
+                        нестабільно.</p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">Відсутність механічних частин позитивно позначається на гучності. Коли запущений
+                        твердотільний носій – шуму немає, чого не скажеш про HDD.</p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">Виділяють мало тепла. SSD не нагріваються так, як жорсткі диски, навіть при серйозних
+                        навантаженнях. При установці <a
+                                href="https://www.moyo.ua/comp-and-periphery/noutebook_pc/comp/">в ПК</a> необхідності в
+                        додатковому охолодженні.</p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">Висока швидкість – по порівнянні з хдд, ССД в 2-3 рази швидше. Чуйність програм також
+                        підвищується. Навіть «важкий», вимогливий до ресурсів системи софт починає реагувати на команди
+                        практично моментально. Файли записуються і зчитуються швидше, що теж плюс.</p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">Якщо SSD диск виявиться в намагніченою області, з ним нічого не станеться, на відміну
+                        від HDD.</p>
+                </li>
+            </ol>
+
+            <p dir="ltr"><img alt="внутренний ссд SAMSUNG 970 EVO 250GB с большим ресурсом записи"
+                              src="https://img.moyo.ua/img/news_desc/1661/166149_1716894258_6.png"
+                              style="height:494px; width:700px"></p>
+
+            <p dir="ltr" style="text-align:right"><strong>Цікаво</strong>: <em>якщо хочеться живучий SSD, то 970 EVO
+                підійде, адже його максимальний ресурс записи дорівнює 1,200 TBW.</em></p>
+
+            <p dir="ltr">Зрозуміло, твердотільні носії не позбавлені недоліків:</p>
+
+            <ul>
+                <li dir="ltr">
+                    <p dir="ltr">Термін служби менше, ніж у жорстких дисків: у SSD обмежений термін перезапису. Однак
+                        якщо використовувати їх для установки ОС і основного софта, то різницю власник навряд чи
+                        помітить.</p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">Можлива втрата великої частини, а іноді і всіх, даних через позаплановий відключення
+                        живлення.</p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">За співвідношенню вартості та об'єму HDD виграє, проте це не можна віднести до істотних
+                        мінусів, особливо, якщо врахувати всі ПЕРЕВАГИ. До того ж, якщо РОЗГЛЯДАТИ SSD як диск ПІД<a
+                                href="https://www.moyo.ua/comp-and-periphery/soft1/os/">систему,</a> жорсткий диск – як
+                        основний, то гнатися за терабайтами зовсім не обов'язково.</p>
+                </li>
+            </ul>
+
+            <p dir="ltr">І SSD, і HDD є надійними носіями інформації, але у кожного є свої позитивні і негативні якості.
+                Так, твердотільні накопичувачі набагато краще класичних вінчестерів в плані швидкості, зате у звичайних
+                HDD немає обмежень на читання/перезапис. Вибрати один вид сховища замість іншого важко. А тому одне з
+                кращих рішень – використовувати обидва варіанти. Жорсткий – для тих даних, які будуть часто переглядати,
+                прати і замінювати. А щоб додати ПК швидкості, стане в нагоді SSD: його можна відвести під ОС і
+                ресурсомісткі утиліти.</p>
+
+            <p>
+                <iframe frameborder="0" height="315" sandbox="allow-scripts allow-same-origin"
+                        src="https://www.youtube.com/embed/_HqOJPq-m2I?enablejsapi=1&amp;origin=https:%2F%2Fwww.moyo.ua"
+                        width="560" id="widget2" data-gtm-yt-inspected-54="true" data-gtm-yt-inspected-62="true"
+                        title="Что лучше SSD или HDD, что выбрать, плюсы и минусы"></iframe>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Відеокарти</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="{{ url_for('static', filename='img/logo.png') }}" width="30" height="30"
+             class="d-inline-block align-top" alt="">
+        Hardware Encyclopedia
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Головна</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Комп'ютерні комплектуючі
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/components/cpu">Процесори</a>
+                    <a class="dropdown-item" href="/components/gpu">Відеокарти</a>
+                    <a class="dropdown-item" href="/components/ram">Оперативна пам'ять</a>
+                    <a class="dropdown-item" href="/components/storage">Жорсткі диски та SSD</a>
+                    <a class="dropdown-item" href="/components/motherboard">Материнські плати</a>
+                    <a class="dropdown-item" href="/components/power">Живлення</a>
+                    <a class="dropdown-item" href="/components/case">Корпуси</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownVideo" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Відео
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownVideo">
+                    <a class="dropdown-item" href="/videos/reviews">Огляди комплектуючих</a>
+                    <a class="dropdown-item" href="/videos/tutorials">Відеоуроки з встановлення та налаштування</a>
+                    <a class="dropdown-item" href="/videos/new-releases">Новинки на ринку</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/links">Корисні посилання</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/contact">Контакти розробника</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <h1>Відеокарти</h1>
+    <div class="eb-faq-content">
+        <div class="lb-none-v-margin lb-grid lb-small-pad lb-grid" data-eb-item-id="seo-faq-pairs#what-is-a-gpu">
+            <div class="lb-row lb-row-max-large lb-snap eb-active">
+                <div class="lb-col lb-tiny-24 lb-mid-24"><h2 class="lb-txt-bold lb-txt-none lb-txt-28 lb-h2 lb-title"
+                                                             id="seo-faq-pairs#what-is-a-gpu"><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">Що таке
+                    GPU?</font></font></h2>
+                    <div class="lb-txt-14 lb-rtxt">
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Графічний
+                            процесор (GPU) – це електронна схема, яка може виконувати математичні обчислення з високою
+                            швидкістю. Обчислювальні завдання, такі як рендеринг графіки, машинне навчання та
+                            редагування відео, вимагають застосування подібних математичних операцій до великого набору
+                            даних. Конструкція графічного процесора дозволяє паралельно виконувати одну й ту саму
+                            операцію з кількома значеннями даних. Це підвищує ефективність обробки багатьох завдань, які
+                            потребують великих обчислювальних ресурсів.</font></font></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lb-none-v-margin lb-grid lb-small-pad eb-bg-dark"
+             data-eb-item-id="seo-faq-pairs#why-are-gpus-important">
+            <div class="lb-row lb-row-max-large lb-snap">
+                <div class="lb-col lb-tiny-24 lb-mid-24"><h2 class="lb-txt-bold lb-txt-none lb-txt-28 lb-h2 lb-title"
+                                                             id="seo-faq-pairs#why-are-gpus-important"><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">У чому важливість
+                    графічних процесорів?</font></font></h2>
+                    <div class="lb-txt-14 lb-rtxt">
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Графічний
+                            процесор добре справляється з паралельною обробкою загального призначення, але не завжди. Як
+                            випливає з назви, графічні процесори спочатку розроблялися однієї конкретної завдання:
+                            управління відображенням зображень.</font></font></p>
+                        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Походження
+                            графічного процесора</font></font></strong></h3>
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">До появи
+                            графічного процесора використовувалися матричні екрани, випущені у 1940-х та 1950-х роках.
+                            Пізніше з'явилися векторні та растрові дисплеї, а потім перші консолі для відеоігор і ПК.
+                            Тоді відображення на екрані контролювалося за допомогою непрограмованого пристрою під
+                            назвою </font></font><em><font style="vertical-align: inherit;"><font
+                                style="vertical-align: inherit;">графічний контролер</font></font></em><font
+                                style="vertical-align: inherit;"><font style="vertical-align: inherit;"> . Для обробки
+                            даних пристроях традиційно використовувався центральний процесор, а деяких –
+                            внутрикристальный.</font></font></p>
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Приблизно в той
+                            же час було реалізовано проект 3D візуалізації, пов'язаний із створенням одного пікселя на
+                            екрані за допомогою одного процесора. Ціль полягала в тому, щоб створити зображення, що
+                            об'єднує безліч пікселів за короткий проміжок часу. У цьому проекті використовувався
+                            графічний процесор у вигляді, як ми його знаємо.</font></font></p>
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Перші графічні
+                            процесори з'явилися лише наприкінці 1990-х років та призначалися для продажу на ринках ігор
+                            та систем автоматизованого проектування (CAD). У графічний процесор були інтегровані раніше
+                            графічний двигун на основі програмного забезпечення, а також двигун трансформації та
+                            освітлення з графічним контролером – і все це на програмованому чіпі.&nbsp;</font></font>
+                        </p>
+                        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Еволюція
+                            технології графічних процесорів</font></font></strong></h3>
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">У 1999 році
+                            компанія Nvidia першою випустила на ринок одночіпові графічні процесори GeForce 256. 2000-і
+                            та 2010-і роки стали епохою зростання. Графічні процесори були доповнені такими функціями,
+                            як трасування променів, затінення осередків та апаратна тесселяція, що призвело до
+                            підвищення продуктивності генерації зображень та графіки.&nbsp;</font></font></p>
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Тільки в 2007
+                            році Nvidia випустила архітектуру CUDA - програмний рівень, що робить паралельну обробку
+                            доступною на графічному процесорі. Приблизно в цей час стало ясно, що графічні процесори
+                            дуже ефективні при виконанні досить специфічних завдань. Зокрема, вони досягли успіху в
+                            завданнях, що вимагають великої обчислювальної потужності для досягнення певного
+                            результату.</font></font></p>
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Випуск CUDA
+                            компанією Nvidia відкрив програмування графічних процесорів для широкої аудиторії. Потім
+                            розробники змогли програмувати технологію графічного процесора різних практичних додатків,
+                            потребують великих обчислювальних ресурсів. Обчислення на графічних процесорах стали більш
+                            поширеними.</font></font></p>
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Крім того, вони
+                            є потрібним чіпом для блокчейна та інших нових додатків. Графічні процесори все більше
+                            орієнтуються на штучний інтелект (ІІ) та машинне навчання (МО).</font></font></p>
+                        <p>
+                            <img src=" https://d1.awsstatic.com/asset-repository/products/amazon-ec2/Website/HA_P2_GENERAL.63cd6f600f0824529b8f7f52207cefb20d6fdf1f.png" height="200px">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lb-none-v-margin lb-grid lb-small-pad lb-grid"
+             data-eb-item-id="seo-faq-pairs#what-are-the-practical-applications-for-a-gpu">
+            <div class="lb-row lb-row-max-large lb-snap">
+                <div class="lb-col lb-tiny-24 lb-mid-24"><h2 class="lb-txt-bold lb-txt-none lb-txt-28 lb-h2 lb-title"
+                                                             id="seo-faq-pairs#what-are-the-practical-applications-for-a-gpu">
+                    <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Які практичні
+                        застосування графічного процесора?</font></font></h2>
+                    <div class="lb-txt-14 lb-rtxt">
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Графічні
+                            процесори можна використовувати в широкому спектрі додатків, що вимагають великих
+                            обчислювальних ресурсів, включаючи великомасштабні фінансові, оборонні програми та
+                            дослідницьку діяльність. Ось деякі з найпоширеніших варіантів використання графічних
+                            процесорів на сьогоднішній день.</font></font></p>
+                        <h3><strong><font style="vertical-align: inherit;"><font
+                                style="vertical-align: inherit;">Ігри</font></font></strong></h3>
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Перші додатки
+                            графічного процесора, що виходять за рамки додатків візуалізації у великих компаніях та
+                            державних установах, були у персональних іграх. Вони використовувалися в ігрових консолях
+                            1980-х років і досі використовуються в ПК та сучасних ігрових консолях. Графічні процесори
+                            необхідні складного графічного рендерингу.</font></font></p>
+                        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Професійна
+                            візуалізація</font></font></strong></h3>
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Графічні
+                            процесори використовуються у професійних програмах, таких як система автоматизованого
+                            проектування, монтаж відео, покрокові посібники з продуктів та інтерактивність, медичні
+                            зображення та сейсмічна візуалізація. Вони також застосовуються до інших складних програм
+                            для редагування та візуалізації зображень та відео. Браузерні програми можуть
+                            використовувати графічний процесор за допомогою таких бібліотек, як WebGL.</font></font></p>
+                        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Машинне
+                            навчання</font></font></strong></h3>
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Навчання моделі
+                            машинного навчання (МО) потребує великих обчислювальних потужностей. Тепер вони можуть
+                            працювати на графічних процесорах, щоб прискорити результати. Хоча навчання моделі на
+                            обладнанні, придбаному самостійно, може зайняти багато часу, ви можете швидко досягти
+                            результатів за допомогою хмарного графічного процесора.</font></font></p>
+                        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Технології
+                            блокчейн</font></font></strong></h3>
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Криптовалюти
+                            збудовані на блокчейнах. Певний тип блокчейну, Proof of Work, зазвичай значною мірою
+                            залежить від роботи графічних процесорів. Спеціалізовані мікросхеми (ASIC), схожі, але
+                            відрізняються один від одного чіпи, тепер є звичайною заміною графічних процесорів для
+                            блокчейна.</font></font></p>
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Алгоритмічні
+                            докази блокчейну Proof of Stake усувають необхідність у величезних обчислювальних
+                            потужностях, але доказ працездатності все ще поширений.</font></font></p>
+                        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Імітаційне
+                            моделювання</font></font></strong></h3>
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Просунуті
+                            програми для моделювання, такі як програми, що використовуються в молекулярній динаміці,
+                            прогнозуванні погоди та астрофізики, можуть бути реалізовані за допомогою графічних
+                            процесорів. Графічні процесори також лежать в основі багатьох програм у дизайні автомобілів
+                            і великих транспортних засобів, включаючи гідродинаміку.</font></font></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lb-none-v-margin lb-grid lb-small-pad eb-bg-dark"
+             data-eb-item-id="seo-faq-pairs#how-does-a-gpu-work">
+            <div class="lb-row lb-row-max-large lb-snap">
+                <div class="lb-col lb-tiny-24 lb-mid-24"><h2 class="lb-txt-bold lb-txt-none lb-txt-28 lb-h2 lb-title"
+                                                             id="seo-faq-pairs#how-does-a-gpu-work"><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">Який принцип роботи
+                    графічного процесора?</font></font></h2>
+                    <div class="lb-txt-14 lb-rtxt">
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Сучасні
+                            графічні процесори зазвичай складаються з кількох мультипроцесорів. Кожен має блок загальної
+                            пам'яті, і навіть кілька процесорів і відповідних регістрів. Сам графічний процесор має
+                            постійну пам'ять, і навіть пам'ять пристрою на платі, де він розміщений.&nbsp;</font></font>
+                        </p>
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Кожен графічний
+                            процесор працює трохи інакше залежно від призначення, виробника, особливостей мікросхеми та
+                            програмного забезпечення, що використовується для координації графічного процесора.
+                            Наприклад, програмне забезпечення Nvidia для паралельної обробки CUDA дозволяє розробникам
+                            спеціально програмувати графічний процесор практично для будь-якої програми паралельної
+                            обробки загального призначення.&nbsp;</font></font></p>
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Графічні
+                            процесори можуть бути автономними чіпами, відомими як дискретні графічні процесори або
+                            інтегрованими з іншим обчислювальним обладнанням, відомим як інтегровані графічні процесори
+                            (iGPU).</font></font></p>
+                        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Дискретні
+                            графічні процесори</font></font></strong></h3>
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Дискретні
+                            графічні процесори є чіп, повністю призначений на вирішення поставлених завдань. У той час
+                            як цим завданням традиційно була графіка, тепер дискретні графічні процесори можна
+                            використовувати як спеціалізовану обробку для таких завдань, як МО або складне
+                            моделювання.</font></font></p>
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">При
+                            використанні графіки графічний процесор зазвичай перебуває на відеокарті, яка вставляється в
+                            материнську плату. В інших завданнях графічний процесор може знаходитися на іншій карті або
+                            слоті безпосередньо на материнській платі.&nbsp;</font></font></p>
+                        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Інтегровані
+                            графічні процесори</font></font></strong></h3>
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">На початку
+                            2010-х спостерігався відхід від дискретних графічних процесорів. Виробники ставали
+                            прихильниками впровадження комбінації ЦПУ та графічного процесора на мікросхемі, відомої як
+                            iGPU. Перші графічні процесори для ПК були представлені брендами Intel Celeron, Pentium та
+                            Core. Вони, як і раніше, часто використовуються в ноутбуках і ПК.&nbsp;</font></font></p>
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Інший тип iGPU
+                            - це система на мікросхемі (SoC), яка містить такі компоненти, як процесор, графічний
+                            процесор, пам'ять та мережу. Ці типи мікросхем зазвичай використовують у смартфонах.</font></font>
+                        </p>
+                        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Віртуальне
+                            навчання</font></font></strong></h3>
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Як і інші типи
+                            обчислювальної апаратної інфраструктури, графічні процесори можна віртуалізувати.
+                            Віртуалізовані графічні процесори – це програмне представлення графічного процесора, яке
+                            поділяє простір з іншими віртуальними графічними процесорами на інстансах серверів хмар. Їх
+                            можна використовувати для виконання робочих навантажень, не переймаючись обслуговуванням
+                            базового обладнання.</font></font></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lb-none-v-margin lb-grid lb-small-pad lb-grid"
+             data-eb-item-id="seo-faq-pairs#whats-the-difference-between-a-gpu-and-a-cpu">
+            <div class="lb-row lb-row-max-large lb-snap">
+                <div class="lb-col lb-tiny-24 lb-mid-24"><h2 class="lb-txt-bold lb-txt-none lb-txt-28 lb-h2 lb-title"
+                                                             id="seo-faq-pairs#whats-the-difference-between-a-gpu-and-a-cpu">
+                    <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">У чому різниця між
+                        графічним процесором та ЦПУ?</font></font></h2>
+                    <div class="lb-txt-14 lb-rtxt">
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Основна </font></font><a
+                                href="https://aws.amazon.com/compare/the-difference-between-gpus-cpus/"
+                                tabindex="0"><font style="vertical-align: inherit;"><font
+                                style="vertical-align: inherit;">відмінність між ЦПУ та графічним
+                            процесором</font></font></a><font style="vertical-align: inherit;"><font
+                                style="vertical-align: inherit;"> полягає в їхньому призначенні в комп'ютерній системі.
+                            Вони відіграють різні ролі в залежності від системи. Наприклад, вони служать різним цілям у
+                            портативному ігровому пристрої, ПК та суперкомп'ютері з кількома серверними
+                            шафами.</font></font></p>
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">В цілому
+                            процесор забезпечує повний контроль над системою, а також управління та виконання завдань
+                            загального призначення. І навпаки, графічний процесор виконує ресурсомісткі завдання, такі
+                            як редагування відео чи машинне навчання.</font></font></p>
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Зокрема,
+                            процесори оптимізовані для виконання таких завдань:</font></font></p>
+                        <ul>
+                            <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">керування
+                                системою;</font></font></li>
+                            <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">багатозадачність
+                                у різних додатках;</font></font></li>
+                            <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">операції
+                                введення та виведення;</font></font></li>
+                            <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">мережеві
+                                функції;</font></font></li>
+                            <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">керування
+                                периферійними пристроями;</font></font></li>
+                            <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">багатозадачність
+                                пам'яті та системи зберігання.</font></font></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lb-none-v-margin lb-grid lb-small-pad eb-bg-dark"
+             data-eb-item-id="seo-faq-pairs#whats-the-difference-between-a-gpu-and-a-graphics-card">
+            <div class="lb-row lb-row-max-large lb-snap">
+                <div class="lb-col lb-tiny-24 lb-mid-24"><h2 class="lb-txt-bold lb-txt-none lb-txt-28 lb-h2 lb-title"
+                                                             id="seo-faq-pairs#whats-the-difference-between-a-gpu-and-a-graphics-card">
+                    <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">У чому різниця між
+                        графічним процесором та графічним контролером?</font></font></h2>
+                    <div class="lb-txt-14 lb-rtxt">
+                        <p><font style="vertical-align: inherit;"><font
+                                style="vertical-align: inherit;">Назви </font></font><em><font
+                                style="vertical-align: inherit;"><font style="vertical-align: inherit;">графічного
+                            процесора</font></font></em><font style="vertical-align: inherit;"><font
+                                style="vertical-align: inherit;"> та </font></font><em><font
+                                style="vertical-align: inherit;"><font style="vertical-align: inherit;">графічного
+                            контролера</font></font></em><font style="vertical-align: inherit;"><font
+                                style="vertical-align: inherit;"> часто використовуються як синоніми, але це не одне й
+                            те саме.</font></font></p>
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Графічний
+                            контролер – це розширювальна плата (AIB), яка вставляється на місце на материнській платі
+                            комп'ютера. Графічні контролери не вбудовані в сам комп'ютер, а взаємозамінні. Графічний
+                            контролер іде у комплекті з графічним процесором.</font></font></p>
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Графічний
+                            процесор є основним компонентом графічного контролера. Він існує разом з іншими
+                            компонентами, такими як пам'ять зображення (VRAM), порти (наприклад HDMI або DisplayPort) і
+                            компонент охолодження. Однак графічний процесор також може бути вбудований безпосередньо в
+                            материнську плату або інтегрований у вигляді мікросхеми "все в одному" разом з іншими
+                            компонентами.</font></font></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="{{ url_for('static', filename='img/gpu.jpg') }}" class="img-fluid" alt="Відеокарти">
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

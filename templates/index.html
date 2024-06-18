@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardware Encyclopedia</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="{{ url_for('static', filename='img/logo.png') }}" width="30" height="30"
+             class="d-inline-block align-top" alt="">
+        Hardware Encyclopedia
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Головна</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="true">
+                    Комп'ютерні комплектуючі
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/components/cpu">Процесори</a>
+                    <a class="dropdown-item" href="/components/gpu">Відеокарти</a>
+                    <a class="dropdown-item" href="/components/ram">Оперативна пам'ять</a>
+                    <a class="dropdown-item" href="/components/storage">Жорсткі диски та SSD</a>
+                    <a class="dropdown-item" href="/components/motherboard">Материнські плати</a>
+                    <a class="dropdown-item" href="/components/power">Живлення</a>
+                    <a class="dropdown-item" href="/components/case">Корпуси</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownVideo" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Відео
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownVideo">
+                    <a class="dropdown-item" href="/videos/reviews">Огляди комплектуючих</a>
+                    <a class="dropdown-item" href="/videos/tutorials">Відеоуроки з встановлення та налаштування</a>
+                    <a class="dropdown-item" href="/videos/new-releases">Новинки на ринку</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/links">Корисні посилання</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/contact">Контакти розробника</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <div class="jumbotron">
+        <h1 class="display-4">Ласкаво просимо до Hardware Encyclopedia!</h1>
+        <p class="lead">Все про комп'ютерні комплектуючі в одному місці.</p>
+        <hr class="my-4">
+        <p>Останні новини та оновлення про нові технології та комплектуючі.</p>
+        <a class="btn btn-primary btn-lg" href="/components" role="button">Дізнатись більше</a>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <img src="{{ url_for('static', filename='img/standard.gif') }}" class="img-fluid" alt="Анімований банер">
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <h2>Новини</h2>
+            <p>Останні новини зі світу комп'ютерних технологій.</p>
+        </div>
+        <div class="col-md-4">
+            <h2>Статті</h2>
+            <p>Корисні статті та огляди на різні комплектуючі.</p>
+        </div>
+        <div class="col-md-4">
+            <h2>Відео</h2>
+            <p>Дивіться наші відеоогляди та уроки.</p>
+        </div>
+    </div>
+    <div id="openweathermap-widget-11"></div>
+</div>
+
+
+
+<script src='//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/d3.min.js'></script>
+<script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];
+window.myWidgetParam.push({
+    id: 11,
+    cityid: '707308',
+    appid: 'e0183218a4f361a25d738f3dc6ccb6d0',
+    units: 'metric',
+    containerid: 'openweathermap-widget-11',
+});
+(function () {
+    var script = document.createElement('script');
+    script.async = true;
+    script.charset = "utf-8";
+    script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(script, s);
+})();</script>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

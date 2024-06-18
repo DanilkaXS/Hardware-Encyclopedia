@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оперативна пам'ять</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="{{ url_for('static', filename='img/logo.png') }}" width="30" height="30"
+             class="d-inline-block align-top" alt="">
+        Hardware Encyclopedia
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Головна</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Комп'ютерні комплектуючі
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/components/cpu">Процесори</a>
+                    <a class="dropdown-item" href="/components/gpu">Відеокарти</a>
+                    <a class="dropdown-item" href="/components/ram">Оперативна пам'ять</a>
+                    <a class="dropdown-item" href="/components/storage">Жорсткі диски та SSD</a>
+                    <a class="dropdown-item" href="/components/motherboard">Материнські плати</a>
+                    <a class="dropdown-item" href="/components/power">Живлення</a>
+                    <a class="dropdown-item" href="/components/case">Корпуси</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownVideo" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Відео
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownVideo">
+                    <a class="dropdown-item" href="/videos/reviews">Огляди комплектуючих</a>
+                    <a class="dropdown-item" href="/videos/tutorials">Відеоуроки з встановлення та налаштування</a>
+                    <a class="dropdown-item" href="/videos/new-releases">Новинки на ринку</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/links">Корисні посилання</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/contact">Контакти розробника</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <h1>Оперативна пам'ять</h1>
+    <div class="content">
+        <p>
+            Оперативна пам’ять – це комп’ютерний тип пам’яті швидкої дії. Для
+            чого призначена оперативна пам’ять? Її функція – записувати, читати і зберігати інформацію у процесі
+            обробки. Це невід’ємна комплектуюча системного блоку комп’ютера, без якої він просто не буде працювати.
+        </p>
+        <p>
+            Виділяють 3 типи частотності ОЗУ:
+        </p>
+        <ol>
+            <li>
+                <p>
+                    DDR (200-400 MHz).
+                </p>
+            </li>
+            <li>
+                <p>
+                    DDR2 (533-1200 MHz).
+                </p>
+            </li>
+            <li>
+                <p>
+                    DDR3 (800-2400 MHz).
+                </p>
+            </li>
+        </ol>
+        <p>
+            Чим більша частота, тим швидше будуть виконуватися команди ПК. Але варто розуміти, що оперативна пам’ять
+            узгоджується із процесором. Тому інколи це викликає парадоксальні ситуації, коли частота ОЗУ більша, а
+            швидкість роботи менша. Тому рекомендуємо звертати увагу на такі деталі, як обсяг пам’яті та частота
+            процесора в ГГц. Якщо процесор не дуже потужний, купувати ОЗУ з високою частотністю немає сенсу, адже
+            процесор “не потягне” таких характеристик оперативки.
+        </p>
+        <p>
+            Щодо типів опертиавної планки, то їх виділяють 2:
+        </p>
+        <ul>
+            <li>
+                <p>
+                    DRAM – динамічна внутрішня пам’ять;
+                </p>
+            </li>
+            <li>
+                <p>
+                    SRAM – статична ОЗП.
+                </p>
+            </li>
+        </ul>
+        <p>
+            Основна різниця між цими двома видами оперативної пам’яті – в технології виготовлення та принципі роботи.
+            Перший варіант частіше зустрічається в комп’ютерах і ноутбуках і підходить для роботи середньої складності.
+            Він дешевий і простіший. Другий тип характеризується більш швидкою роботою та довговічністю, але й ціна
+            відповідна.
+        </p>
+        <h2>Особливості роботи оперативної пам'яті</h2>
+        <p>
+            ОЗУ взаємодіє з процесором та зовнішнім накопичувачем. Принцип роботи такий:
+        </p>
+        <ol>
+            <li>
+                <p>
+                    Накопичувач відправляє інформацію на оперативну пам’ять;
+                </p>
+            </li>
+            <li>
+                <p>
+                    Ці дані з ОЗУ надходять до центрального процесора;
+                </p>
+            </li>
+            <li>
+                <p>
+                    Процесор обробляє інформацію та запускає процес вводу-виводу.
+                </p>
+            </li>
+        </ol>
+        <p>
+            Простими словами, ОЗП – це тимчасова пам’ять. І чим вона більша, тим швидкою буде робота ПК.&nbsp;
+        </p>
+        <h2>Структура ОЗП</h2>
+        <p>
+            Оперативна пам'ять ділиться на 5 областей:
+        </p>
+        <ol>
+            <li>
+                <p>
+                    Conventional memory – основна;
+                </p>
+            </li>
+            <li>
+                <p>
+                    UMA – верхня;
+                </p>
+            </li>
+            <li>
+                <p>
+                    HMA – область верхньої пам'яті або область верхніх адрес;
+                </p>
+            </li>
+            <li>
+                <p>
+                    XMS – додаткова;
+                </p>
+            </li>
+            <li>
+                <p>
+                    EMS – розширена.
+                </p>
+            </li>
+        </ol>
+        <h2>Що залежить від об'єму оперативної пам'яті?</h2>
+        <p>
+            На що впливає оперативна пам’ять комп’ютера? Як ми вже згадували, ОПЗ впливає на швидкість і продуктивність
+            роботи ПК, а саме, впливають такі чинники:
+        </p>
+        <ul>
+            <li>
+                <p>
+                    Об’єм;
+                </p>
+            </li>
+            <li>
+                <p>
+                    Частота;
+                </p>
+            </li>
+            <li>
+                <p>
+                    Покоління.
+                </p>
+            </li>
+        </ul>
+        <p>
+            Чим вищі показники цих критеріїв, тим краще – так комп’ютер чи інший девайс будуть значно спритнішими.
+        </p>
+        <h2>Перевіряємо, що займає ОЗУ на комп'ютері</h2>
+        <p>
+            Деякі програми займають дуже багато оперативної пам’яті і тим самим негативно впливають роботу ПК і значно
+            її сповільнюють. Наприклад, це можуть бути додатки у фоновому режимі – вони споживають дуже багато ресурсу.
+            Як приклад:
+        </p>
+        <ul>
+            <li>
+                <p>
+                    Шкідливе ПО;
+                </p>
+            </li>
+            <li>
+                <p>
+                    Софт з автозавантаження;
+                </p>
+            </li>
+            <li>
+                <p>
+                    Багато відкритих вкладок.
+                </p>
+            </li>
+        </ul>
+        <p>
+            Ліквідувати це можна почистивши ПК від вірусів. Також для чистки можете скористатися “Диспетчером завдань”,
+            через котрий можна відключити непотрібні “ненажерливі” програми. Також корисним буде регулярне
+            перезавантаження пристрою – хоча б раз у декілька днів.
+        </p>
+        <h2>Оперативна VS постійна пам’ять. Яка різниця?</h2>
+        <p>
+            Цікавить, чим відрізняється оперативна пам’ять від постійної? Все просто:
+        </p>
+        <ul>
+            <li>
+                <p>
+                    <b>Оперативна пам'ять</b> – це енергозалежна пам’ять, котра після вимкнення пристрою повністю
+                    автоматично очищається і починає свою роботу тільки після запуску системи.
+                </p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p>
+                    <b>Постійна пам’ять</b> – використовується для зберігання незмінних даних (фото, музика, відео
+                    тощо).
+                </p>
+            </li>
+        </ul>
+        <h2>Збільшуємо об’єм оперативної пам’яті</h2>
+        <p>
+            Якщо ви хочете збільшити продуктивність і функціональність комп’ютера, збільшення оперативної пам’яті –
+            чудовий варіант. Зробити це можна 2 способами:
+        </p>
+        <ol>
+            <li>
+                <p>
+                    Вставити оперативку з більшим об’ємом пам’яті;
+                </p>
+            </li>
+            <li>
+                <p>
+                    Скористатися флеш-накопичувачем чи іншим запам’ятовуючим пристроєм.
+                </p>
+            </li>
+        </ol>
+        <p>
+            Якщо з 2 варіантом все зрозуміло, то для 1 першого треба пояснення. Справа в тому, що комп’ютер може мати
+            декілька слотів у материнській платі, в які можна вставляти додаткові модулі. Чим більша кількість слотів
+            для модулів, тим краще. І якщо є вибір: поставити один модуль, розміром 8 ГБ чи два по 4 ГБ, краще вибрати
+            другий варіант.
+        </p>
+
+    </div>
+    <img src="{{ url_for('static', filename='img/ram.jpg') }}" class="img-fluid" alt="Оперативна пам'ять">
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корпуси</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="{{ url_for('static', filename='img/logo.png') }}" width="30" height="30"
+             class="d-inline-block align-top" alt="">
+        Hardware Encyclopedia
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Головна</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Комп'ютерні комплектуючі
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/components/cpu">Процесори</a>
+                    <a class="dropdown-item" href="/components/gpu">Відеокарти</a>
+                    <a class="dropdown-item" href="/components/ram">Оперативна пам'ять</a>
+                    <a class="dropdown-item" href="/components/storage">Жорсткі диски та SSD</a>
+                    <a class="dropdown-item" href="/components/motherboard">Материнські плати</a>
+                    <a class="dropdown-item" href="/components/power">Живлення</a>
+                    <a class="dropdown-item" href="/components/case">Корпуси</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownVideo" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Відео
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownVideo">
+                    <a class="dropdown-item" href="/videos/reviews">Огляди комплектуючих</a>
+                    <a class="dropdown-item" href="/videos/tutorials">Відеоуроки з встановлення та налаштування</a>
+                    <a class="dropdown-item" href="/videos/new-releases">Новинки на ринку</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/links">Корисні посилання</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/contact">Контакти розробника</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <h1>Корпуси</h1>
+    <p>Корпус - це оболонка, яка забезпечує захист та організацію компонентів комп'ютера.</p>
+    <p>Корпуси можуть мати різні розміри, форми та дизайни, а також можуть мати додаткові функції, такі як системи
+        охолодження, порти вводу/виводу та інші.</p>
+    <img src="{{ url_for('static', filename='img/case.jpg') }}" class="img-fluid" alt="Корпус">
+
+
+    <h2 dir="ltr" style="text-align:justify" id="ank2-1_hash">Габарити корпуса</h2>
+
+    <p dir="ltr" style="text-align:justify">Під час вибору корпуса, враховуй розмір <a
+            href="https://www.moyo.ua/comp-and-periphery/periphery-and-compon/materinskie-platy/">материнської
+        плати</a> та <a
+            href="https://www.moyo.ua/comp-and-periphery/periphery-and-compon/videokarty/">відеокарти</a>. Це великі
+        складники, які повинні вміщуватися до «коробки». Також варто враховувати висоту <a
+                href="https://www.moyo.ua/comp-and-periphery/periphery-and-compon/kuleri-i-radiatory/">кулера</a> —
+        щоб не довелося потім мізкувати, куди ж його приткнути.&nbsp;</p>
+
+    <p dir="ltr" style="text-align:justify">Перш ніж вибрати відповідну модель, потрібно розуміти для себе чотири
+        моменти:</p>
+
+    <ul style="list-style-type:disc">
+        <li dir="ltr">
+            <p dir="ltr" style="text-align:justify">під які задачі буде використовуватися корпус;</p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr" style="text-align:justify">яке обладнання планується встановити;</p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr" style="text-align:justify">у якому місці було б краще розташування отворів для обдуву;</p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr" style="text-align:justify">чи встановлений блок живлення та якої він потужності. Адже запас
+                для майбутнього апгрейда дуже бажаний.</p>
+        </li>
+    </ul>
+
+    <p dir="ltr" style="text-align:justify">П'ять стандартів під розміри материнки дивись у таблиці:</p>
+
+    <table align="left" dir="ltr">
+        <tbody>
+        <tr>
+            <td>
+                <p dir="ltr" style="text-align:justify">Тип корпуса</p>
+            </td>
+            <td>
+                <p dir="ltr" style="text-align:justify">Розмір материнської плати, мм</p>
+            </td>
+            <td>
+                <p dir="ltr" style="text-align:justify">Призначення</p>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2">
+                <p dir="ltr" style="text-align:justify">Mini-ITX</p>
+            </td>
+            <td rowspan="2">
+                <p dir="ltr" style="text-align:justify">170*170</p>
+            </td>
+            <td rowspan="2">
+                <p dir="ltr" style="text-align:justify">Офісний варіант із вмонтованим блоком живлення до 350 Вт</p>
+            </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+            <td>
+                <p dir="ltr" style="text-align:justify">Micro-ATX</p>
+            </td>
+            <td>
+                <p dir="ltr" style="text-align:justify">244*244</p>
+            </td>
+            <td>
+                <p dir="ltr" style="text-align:justify">Настільний варіант</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p dir="ltr" style="text-align:justify">ATX</p>
+            </td>
+            <td>
+                <p dir="ltr" style="text-align:justify">305*244</p>
+            </td>
+            <td>
+                <p dir="ltr" style="text-align:justify">Без БЖ, свобода в розширенні&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p dir="ltr" style="text-align:justify">E-ATX</p>
+            </td>
+            <td>
+                <p dir="ltr" style="text-align:justify">305*330</p>
+            </td>
+            <td rowspan="2">
+                <p dir="ltr" style="text-align:justify">Для графічних підсистем та обчислювальних ядер</p>
+
+                <p dir="ltr" style="text-align:justify">ігрових ПК</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p dir="ltr" style="text-align:justify">XL-ATX</p>
+            </td>
+            <td>
+                <p dir="ltr" style="text-align:justify">345*262</p>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div style="text-align:justify">&nbsp;</div>
+
+    <p dir="ltr" style="text-align:justify">Горизонтальний корпус SFF має невелику вагу та займає мало місця. Його
+        зручно брати із собою за необхідності. Оснащений охолоджувальною материнською платою із вмонтованими звуком
+        та відео. З метою економії робочого простору на ньому можна розмістити монітор.&nbsp;&nbsp;</p>
+
+    <p style="text-align:justify">&nbsp;</p>
+
+    <p dir="ltr" style="text-align:justify"><img
+            src="https://lh5.googleusercontent.com/nJO7G05Vc9cOUq61vmp5J--gWujE2kOIx9ZXmu8mhU7Gz6N0mimUhC7dwYvPwdTFJuspZhtXnNu5UY8Nt2O4iTD93OOmZnmiEUsWxF636-MyeFVXdRBgKPZKGreRS5NyIsNsbdD7"
+            style="height:173px; margin-top:0px; width:602px"></p>
+
+    <p dir="ltr" style="text-align:justify">Баштовий (tower) або вертикальний тип корпусу розподіляють за розмірами
+        на три класифікації.</p>
+
+    <ol style="list-style-type:decimal">
+        <li dir="ltr">
+            <p dir="ltr" style="text-align:justify">Маленький (mini) — вибір комплектуючих обмежений через невеликий
+                обсяг корпусу. Зібрати продуктивний ПК не вдасться.</p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr" style="text-align:justify">Середній (midi-tower) — поширений вид корпусу для настільного
+                ПК.&nbsp; Підходить для офісного варіанту та для складання хорошого рівня ігрової платформи.</p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr" style="text-align:justify">Більш місткий (full-tower) — найбільший корпус із запропонованих
+                на ринку збуту. Підходить для великого числа складників і створення нової конфігурації
+                комплектуючих.</p>
+        </li>
+    </ol>
+
+
+    <h2 dir="ltr" style="text-align:justify" id="ank2-2_hash">Система охолодження</h2>
+
+    <p dir="ltr" style="text-align:justify">Термін життя складників залежить від якості охолодження всередині.
+        Розмір і матеріал «коробки» безпосередньо впливає на охолодження. Під час підбору корпусу для ПК варто
+        враховувати:</p>
+
+    <ul style="list-style-type:disc">
+        <li dir="ltr">
+            <p dir="ltr" style="text-align:justify">матеріал стінок коробки — алюміній або сталь. Вони обидва добре
+                розсіюють тепло, але ж алюміній у три рази швидше його проводить;</p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr" style="text-align:justify">товщина стінок повинна бути не меншою за 0,5 мм для гарної
+                шумоізоляції.</p>
+        </li>
+    </ul>
+
+    <p dir="ltr" style="text-align:justify">Грамотна організація циркуляції повітря всередині корпусу забезпечить
+        якісне охолодження внутрішніх компонентів.&nbsp;</p>
+
+    <ol style="list-style-type:decimal">
+        <li dir="ltr">
+            <p dir="ltr" style="text-align:justify">На передній панелі бажано встановлювати один або кілька кулерів,
+                які будуть активно втягувати кімнатне повітря.</p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr" style="text-align:justify">На задній стінці краще ставити вентилятор, який працює на
+                видув.</p>
+        </li>
+    </ol>
+
+    <p dir="ltr" style="text-align:justify">Такий розподіл дозволить створити хорошу тягу. Охолоджене повітря буде
+        циркулювати через внутрішні компоненти, і виноситись назовні.</p>
+
+    <p dir="ltr" style="text-align:justify"><img
+            src="https://lh3.googleusercontent.com/7-Znf7M8HYqoV1u7HTOFtGNqtrr5F_6l5-dA0kaHGFmmZduoUIfnRV-uU9DR2cnqviOkAfeiVHBi5S6GHx1MMA303girp5FDH4R2orviElJwiynMVrQUmr27sqk2jJZpmARZICp_"
+            style="height:189px; margin-top:0px; width:602px"></p>
+
+    <p dir="ltr" style="text-align:justify">Вибираючи корпус для комп'ютера, враховуй додаткові вентилятори, які
+        встановлюються з боків та на верхній стінці. Адже багато вентиляторів — не означає добре, тому що циркуляцію
+        створює не їх кількість, а правильний рух повітря.&nbsp;</p>
+
+
+    <h2 dir="ltr" style="text-align:justify" id="ank2-3_hash">Розташування блоку живлення</h2>
+
+    <p dir="ltr" style="text-align:justify"><a
+            href="https://www.moyo.ua/comp-and-periphery/periphery-and-compon/bloki-pitaniya/">Блок живлення</a> в
+        старих і бюджетних нових корпусах встановлений у верхній частині. Це гаряча частина системного блоку. Тепло,
+        що виробляється відеокартою, процесором та іншими деталями, підіймається. Кулер блоку живлення спрямований
+        вниз і працює на вдув, тому йде не охолодження, а перегрів.</p>
+
+    <p dir="ltr" style="text-align:justify">А перегрівання шкідливе. Навантаження на залізо при важких програмах або
+        іграх призводить до вироблення ще більшого тепла. Блок гріється сильніше, ланцюги живлення починають
+        працювати нестабільно, відбуваються перепади та збої, які згубно впливають на процесор і відеокарту. За
+        таких проблем відбувається уповільнення роботи системника в цілому.&nbsp;</p>
+
+    <p dir="ltr" style="text-align:justify"><img
+            src="https://lh4.googleusercontent.com/_EgO3gcvPUzfsLI50wrFplEEmbYvtQAgdcFOaeZkXyD_Jh1xxMwmnzCTz6u8lNvJ1Osm_46nmmctzQjhh5FAIh94cj_wxLpIcyo82A4YbH755j0jSHaVIHOR_tZ8kt_YUt9zgyiG"
+            style="height:273px; margin-top:0px; width:602px"></p>
+
+    <p style="text-align:justify">&nbsp;</p>
+
+    <p dir="ltr" style="text-align:justify">Взяти блок потужніший не розв'язує проблему. Корпус для ПК краще брати з
+        нижнім кріпленням блоку живлення. Він не буде пропускати через себе гаряче повітря від комплектуючих.
+        Навпаки, забирає та охолоджується повітрям з кімнати, тому прослужить не один рік.&nbsp;</p>
+
+
+    <h2 dir="ltr" style="text-align:justify" id="ank2-4_hash">Відсіки для жорстких дисків</h2>
+
+    <p dir="ltr" style="text-align:justify">У дешевих корпусах кріплення жорсткого диска здійснюється за допомогою
+        болтів. Але корпус для ПК краще взяти із системою пластикових клепок та висувних кріплень. Санчата, що
+        виїжджають, для жорстких дисків максимально зручні та встановлюються за три кроки:&nbsp;</p>
+
+    <ul style="list-style-type:disc">
+        <li dir="ltr">
+            <p dir="ltr" style="text-align:justify">викотити санчата;</p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr" style="text-align:justify">жорсткий диск зафіксувати болтами в чотирьох позиціях;</p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr" style="text-align:justify">поставити на місце санчата.</p>
+        </li>
+    </ul>
+
+    <p dir="ltr" style="text-align:justify">Залишилося тільки під'єднати SATA-дроти безпосередньо до жорсткого диска
+        коротким шляхом через найближчий отвір. Найчастіше вони йдуть у комплектації з платою й блоком
+        живлення.&nbsp;</p>
+
+    <p dir="ltr" style="text-align:justify"><img
+            src="https://lh5.googleusercontent.com/JYuFZePwHSBGXxCCwRYtrjHzjzx_Zx9nB6On0p_SMIDepSnF0m-UNGBWZtKAw0IyN3ehnHOD6JITZI19ErxG23qyL-355wv2UnVGvCnC3HSS0Ok3RRfEhJILZFNxndkEayRRWFiJ"
+            style="height:175px; margin-top:0px; width:602px"></p>
+
+    <p dir="ltr" style="text-align:justify">Така ергономіка корпусу зручна для користувача та легко трансформується
+        під час модернізації.</p>
+
+
+    <h2 dir="ltr" style="text-align:justify" id="ank2-5_hash">Можливість зручного розташування кабелів
+        усередині</h2>
+
+    <p dir="ltr" style="text-align:justify">Більшість, під час самостійного складання, нервують, коли бачать велику
+        кількість проводів. Правильно прокласти кабель менеджмент — це важливо.&nbsp; Сенс не в тому, щоб було
+        красиво, особливо якщо кришка прозора, а в охолодженні. Якщо дроти будуть висіти купою, виникають труднощі
+        потокам повітря, який направлено проходить від переднього вентилятора до заднього. І накопичується пил, який
+        забиває процесор, плати. Може статися їх перегрів і подальший вихід з ладу.</p>
+
+    <p dir="ltr" style="text-align:justify">Під час підбору корпусу для ПК зважай, що сумарно доведеться вкласти
+        близько 20 проводів. За допомогою порожніх віконець у скелеті корпусу проводиться розводка та підключення до
+        деталей найкоротшим шляхом. Або близько до стінок — вушками — за допомогою нейлонових стяжок. Простір має
+        залишатися відкритим — таким чином кабелі не заважають у роботі та водночас перебувають у крокової
+        доступності, якщо необхідно апгрейдити ПК. Незалучені дроти приховують за заслінкою або шторкою, зібравши в
+        пучок.&nbsp;</p>
+
+    <p dir="ltr" style="text-align:justify">На завершення, пропонуємо ознайомитися з ТОП-3 кращими корпусами,
+        продаваними у 2021 році.</p>
+
+    <p style="text-align:justify">&nbsp;</p>
+
+    <p dir="ltr" style="text-align:justify"><img
+            src="https://lh4.googleusercontent.com/sG6FYqmx29mD1az24KN1NVdlsd8dC6su8g-6BQWFoaHtaTFu91NZsrmasWA8PFTwL7hSNJipiyCBpx98rxRrcuPgiBkUXCL68sIcvqTCGpARRclxyuTHqBnVCARRJC-jdFnS8nFg"
+            style="height:144px; margin-top:0px; width:602px"></p>
+
+    <ul style="list-style-type:disc">
+        <li dir="ltr">
+            <p dir="ltr" style="text-align:justify">&nbsp;2E Gaming Ardor<br>
+                Сталевий корпус (Midi Tower) товщиною 0,5 мм і бічною стінкою із загартованого скла. Передня панель
+                декорована вставкою, що світиться.&nbsp; Організація внутрішнього простору передбачає встановлення
+                п'яти вентиляторів до чотирьох, що вже встановлені, та системи рідинного охолодження.</p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr" style="text-align:justify"><a
+                    href="https://www.moyo.ua/korpus_2e_basis_2e-rd858_/476229.html">2E BASIS</a> (Mini Tower)<br>
+                Офісний варіант. Врахований чинник зовнішнього вигляду: одна зі стінок акрилова. Є два вмонтованих
+                кулери з можливістю додавання на задню панель третього. Передбачене верхнє кріплення блоку живлення.&nbsp;
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr" style="text-align:justify">&nbsp;SilverStone SUGO SG14B<br>
+                Завдяки модульній конструкції, процес складання спрощується й в подальшій модернізації складнощів не
+                виникне. Знімаються всі чотири панелі. Вміщує повнорозмірні відеокарти. Передбачене нижнє
+                розташування БЖ, встановлений один вентилятор.</p>
+        </li>
+    </ul>
+
+
+    <p>
+        <iframe frameborder="0" height="315" sandbox="allow-scripts allow-same-origin"
+                src="https://www.youtube.com/embed/saseW6KIqD8?enablejsapi=1&amp;origin=https:%2F%2Fwww.moyo.ua"
+                width="560" id="widget2" data-gtm-yt-inspected-55="true" data-gtm-yt-inspected-62="true"
+                title="ПРАВИЛЬНОЕ ОХЛАЖДЕНИЕ И ПРОДУВАЕМОСТЬ ПК | #ЖЕЛЕЗНЫЙ_ПОДКАСТ 4"></iframe>
+    </p>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
