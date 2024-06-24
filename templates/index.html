@@ -6,6 +6,8 @@
     <title>Hardware Encyclopedia</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/logo.png') }}" type="image/icon type">
+    <link rel="icon" href="{{ url_for('static', filename='img/logo.png') }}" type="image/icon type">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -46,7 +48,7 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownVideo">
                     <a class="dropdown-item" href="/videos/reviews">Огляди комплектуючих</a>
                     <a class="dropdown-item" href="/videos/tutorials">Відеоуроки з встановлення та налаштування</a>
-                    <a class="dropdown-item" href="/videos/new-releases">Новинки на ринку</a>
+                    <a class="dropdown-item" href="/videos/new">Новинки на ринку</a>
                 </div>
             </li>
             <li class="nav-item">
@@ -86,19 +88,18 @@
             <p>Дивіться наші відеоогляди та уроки.</p>
         </div>
     </div>
-    <div id="openweathermap-widget-11"></div>
+    <div id="openweathermap-widget-15"></div>
 </div>
 
 
 
-<script src='//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/d3.min.js'></script>
 <script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];
 window.myWidgetParam.push({
-    id: 11,
+    id: 15,
     cityid: '707308',
     appid: 'e0183218a4f361a25d738f3dc6ccb6d0',
     units: 'metric',
-    containerid: 'openweathermap-widget-11',
+    containerid: 'openweathermap-widget-15',
 });
 (function () {
     var script = document.createElement('script');

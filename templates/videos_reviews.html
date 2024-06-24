@@ -7,81 +7,103 @@
     <title>Огляди комплектуючих</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/logo.png') }}" type="image/icon type">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <img src="{{ url_for('static', filename='img/logo.png') }}" width="30" height="30" class="d-inline-block align-top" alt="">
-            Hardware Encyclopedia
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Головна</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Комп'ютерні комплектуючі
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/components/cpu">Процесори</a>
-                        <a class="dropdown-item" href="/components/gpu">Відеокарти</a>
-                        <a class="dropdown-item" href="/components/ram">Оперативна пам'ять</a>
-                        <a class="dropdown-item" href="/components/storage">Жорсткі диски та SSD</a>
-                        <a class="dropdown-item" href="/components/motherboard">Материнські плати</a>
-                        <a class="dropdown-item" href="/components/power">Живлення</a>
-                        <a class="dropdown-item" href="/components/case">Корпуси</a>
-                    </div>
-                </li>
-                <li class="nav-item active dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownVideos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Відео
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownVideos">
-                        <a class="dropdown-item" href="/videos/reviews">Огляди комплектуючих</a>
-                        <a class="dropdown-item" href="/videos/tutorials">Відеоуроки з встановлення та налаштування</a>
-                        <a class="dropdown-item" href="/videos/new">Новинки на ринку</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/links">Корисні посилання</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/contact">Контакти розробника</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="{{ url_for('static', filename='img/logo.png') }}" width="30" height="30"
+             class="d-inline-block align-top" alt="">
+        Hardware Encyclopedia
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Головна</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Комп'ютерні комплектуючі
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/components/cpu">Процесори</a>
+                    <a class="dropdown-item" href="/components/gpu">Відеокарти</a>
+                    <a class="dropdown-item" href="/components/ram">Оперативна пам'ять</a>
+                    <a class="dropdown-item" href="/components/storage">Жорсткі диски та SSD</a>
+                    <a class="dropdown-item" href="/components/motherboard">Материнські плати</a>
+                    <a class="dropdown-item" href="/components/power">Живлення</a>
+                    <a class="dropdown-item" href="/components/case">Корпуси</a>
+                </div>
+            </li>
+            <li class="nav-item active dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownVideos" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Відео
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownVideos">
+                    <a class="dropdown-item" href="/videos/reviews">Огляди комплектуючих</a>
+                    <a class="dropdown-item" href="/videos/tutorials">Відеоуроки з встановлення та налаштування</a>
+                    <a class="dropdown-item" href="/videos/new">Новинки на ринку</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/links">Корисні посилання</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/contact">Контакти розробника</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
-    <div class="container mt-5">
-        <h1>Огляди комплектуючих</h1>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ETunJTzBmwI" allowfullscreen></iframe>
-                </div>
-                <p>Огляд процесорів</p>
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+            <a class="page-link" href="#">🤔</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="/">Головна</a></li>
+        <li class="page-item"><a class="page-link" href="#">-></a></li>
+        <li class="page-item"><a class="page-link" href="/videos/reviews">Огляди комплектуючих</a></li>
+        <li class="page-item disabled">
+            <a class="page-link " href="#">🤔</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="container mt-5">
+    <h1>Огляди комплектуючих</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ETunJTzBmwI"
+                        allowfullscreen></iframe>
             </div>
-            <div class="col-md-4">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/8fPKgzqchKo" allowfullscreen></iframe>
-                </div>
-                <p>Огляд відеокарт</p>
+            <p>Огляд процесорів</p>
+        </div>
+        <div class="col-md-4">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/8fPKgzqchKo"
+                        allowfullscreen></iframe>
             </div>
-            <div class="col-md-4">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wK40YdsVrzY" allowfullscreen></iframe>
-                </div>
-                <p>Огляд оперативної пам'яті</p>
+            <p>Огляд відеокарт</p>
+        </div>
+        <div class="col-md-4">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wK40YdsVrzY"
+                        allowfullscreen></iframe>
             </div>
+            <p>Огляд оперативної пам'яті</p>
         </div>
     </div>
+</div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

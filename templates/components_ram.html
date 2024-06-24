@@ -6,6 +6,7 @@
     <title>Оперативна пам'ять</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/logo.png') }}" type="image/icon type">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -58,7 +59,21 @@
         </ul>
     </div>
 </nav>
-
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+            <a class="page-link" href="#">🤔</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="/">Головна</a></li>
+        <li class="page-item"><a class="page-link" href="#">-></a></li>
+        <li class="page-item"><a class="page-link" href="/components">Комп'ютерні комплектуючі</a></li>
+        <li class="page-item"><a class="page-link" href="#">-></a></li>
+        <li class="page-item"><a class="page-link" href="/components/ram">Оперативна пам'ять</a></li>
+        <li class="page-item disabled">
+            <a class="page-link " href="#">🤔</a>
+        </li>
+    </ul>
+</nav>
 <div class="container mt-5">
     <h1>Оперативна пам'ять</h1>
     <div class="content">
